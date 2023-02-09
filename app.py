@@ -16,7 +16,7 @@ material_name = st.text_input('Enter the name of the material')
 # if the user enters a name
 if material_name:
     # search for the material on bing
-    results = search_images_bing(key=key, term=material_name)
+    results = search_images_bing(key=key, term=material_name + 'quartz')
     #download the first image
     im = download_url(results.attrgot('contentUrl')[0])
     # open the image
