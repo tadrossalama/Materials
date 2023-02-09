@@ -7,7 +7,8 @@ from pathlib import Path
 from fastdownload import download_url
 
 key= st.secrets["auth_key"]
-learn_inf = load_learner('model.pkl')
+path = Path()
+learn_inf = load_learner(path/'model.pkl')
 
 
 # get the name of the material from the user
