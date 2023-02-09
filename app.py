@@ -11,7 +11,7 @@ path = Path()
 learn_inf = load_learner(path/'model.pkl')
 
 
-# get the name of the material from the user
+st.title('Quartz Vein Material ID')
 material_name = st.text_input('Enter the name of the material')
 # if the user enters a name
 if material_name:
@@ -26,4 +26,4 @@ if material_name:
     # run the image through the model
     pred,pred_idx,probs = learn_inf.predict(im)
     # show the result
-    st.title(f'Prediction: {pred}; Probability: {probs[pred_idx]:.04f}')
+    st.title(f'Prediction: {pred + '-'}; P {probs[pred_idx] * 100 :.02f}%')
