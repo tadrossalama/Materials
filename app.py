@@ -26,4 +26,4 @@ if material_name:
     # run the image through the model
     pred,pred_idx,probs = learn_inf.predict(im)
     # show the result
-    st.title(f'Prediction: {pred}; {probs[pred_idx] * 100 :.02f}%')
+    st.title(f'{pred}')
