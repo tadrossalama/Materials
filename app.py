@@ -11,7 +11,7 @@ path = Path()
 learn_inf = load_learner(path/'model.pkl')
 
 
-st.title('Quartz Vein Material ID')
+st.title('Vein Material ID')
 material_name = st.text_input('Enter the name of the material')
 # if the user enters a name
 if material_name:
